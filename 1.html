@@ -8,6 +8,33 @@
 
 <body>
   <h1>WEB</h1>
+  <input id="bw" type="button" name="black" value="밤/낮" onclick="
+    if(document.querySelector('#bw').name === 'black'){
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+
+    document.querySelector('#bw').name = 'white';
+
+
+    var Acount = document.querySelectorAll('a');
+    var i = 0;
+    while(i < Acount.length){
+      Acount[i].style.color='white';
+      i = i + 1;
+  }
+  } else {
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    document.querySelector('#bw').name = 'black';
+
+    var Acount = document.querySelectorAll('a');
+    var i = 0;
+    while(i < Acount.length){
+      Acount[i].style.color='black';
+      i = i + 1;
+  }
+  }
+  ">
   <div id="grid">
 
       <ol>
